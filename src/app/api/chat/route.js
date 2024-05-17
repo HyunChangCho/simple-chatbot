@@ -47,7 +47,6 @@ export async function POST(req) {
       maxOutputTokens: 100,
     },
   });
-
   const result = await chat.sendMessage("");
   const response = await result.response;
   const text = response.text();
